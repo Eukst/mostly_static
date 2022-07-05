@@ -1,2 +1,59 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<%provide(:title,"Home")%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title><%=yield(:title)%> | Ruby on Rails Tutorial Sample App</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+<h1>Sample App</h1>
+<p>
+This is the home page for the
+<a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+sample application.
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Helper</th>
+      <th scope="col">HTTP Verb</th>
+      <th scope="col">PATH</th>
+      <th scope="col">Controller</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">root_path</th>
+      <td>GET</td>
+      <td>/	</td>
+      <td>static_pages#home</td>
+    </tr>
+    <tr>
+      <th scope="row">static_pages_help_path</th>
+      <td>GET</td>
+      <td>/static_pages/help(.:format)</td>
+      <td>static_pages#help</td>
+    </tr>
+    <tr>
+      <th scope="row">static_pages_about_path</th>
+      <td >GET</td>
+      <td>/static_pages/about(.:format)	</td>
+      <td>static_pages#about</td>
+    </tr>
+     <tr>
+      <th scope="row">static_pages_contact_path</th>
+      <td >GET</td>
+      <td>/static_pages/contact(.:format)	</td>
+      <td>static_pages#contact
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+</body>
+</html
